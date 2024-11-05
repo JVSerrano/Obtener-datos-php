@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    background-color: #86c1f4; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-login-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.cart-count, .login-icon, .admin-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.cart-count img, .login-icon img, .admin-icon img {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+}
+
+h1 {
+    color: #00509e;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    border-radius: 8px;
+    background: white;
+    padding: 15px;
+    width: 300px;
+    position: relative;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.product-price, .product-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.add-button, input[type="submit"], button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 50%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.add-button:hover, input[type="submit"]:hover, button:hover {
+    background-color: #00509e;
+}
+
+.product-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.product-details p, label {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+input[type="number"], input[type="text"], input[type="password"], input[type="email"] {
+    margin: 10px;
+    padding: 5px;
+}
+
+a {
+    color: #00509e;
+    text-decoration: none;
+    margin-top: 20px;
+}
