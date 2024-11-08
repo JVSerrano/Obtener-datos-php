@@ -47,16 +47,21 @@ function imageExists($imagePath)
 <body>
     <div class="cart-login-container">
         <div class="cart-count">
+           
+            <a href="chart.php">
             <img src="carro.png" alt="Carrito">
             <span><?php echo $_SESSION['cart_count'] . ' producto'; ?></span>
+            </a>
+           
         </div>
         <div class="login-icon">
-            <img src="log.png" alt="Usuario">
+            
             <a href="login.php">
+            <img src="log.png" alt="Usuario">
                 <span><?php echo isset($_SESSION['user_id']) ? htmlspecialchars($_SESSION['first_name']) : 'Login'; ?></span>
             </a>
         </div>
-        <?php if (isset($_SESSION['user_id']) && $_SESSION['rol'] === 'admin'): ?>
+        <?php if (isset($_SESSION['user_id']) && isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin'): ?>
             <div class="admin-icon">
                 <a href="users.php">
                     <img src="usuarios.svg" alt="Users">
